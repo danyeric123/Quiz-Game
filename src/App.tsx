@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './App.css'
+import Header from './components/Header';
 import QuestionCard from './components/QuestionCard';
 import {getQuizQuestions,Difficulty,Questions} from './services/apiServices'
 
@@ -61,15 +63,29 @@ const App: React.FC = () => {
   }
 
   return (
-    <div>
-      <h1>Trivia Game</h1>
-      <small>Written in React with TypeScript</small>
-      {gameOver&&<button onClick={startTrivia}>Start</button>}
-      {userAnswers[number]&&(!userAnswers[number]?.correct?
-        "Wrong":
-        "Correct!"
-      )}
-      {!gameOver&&<p>Score: {score}</p>}
+    <div
+      id="container"
+    >
+      <Header />
+      {gameOver&&
+        <button 
+          onClick={startTrivia}
+          id="start-btn"
+        >
+          Start
+        </button>
+      }
+      {!gameOver&&<section>
+        <h1
+          id={userAnswers[number]?.correct?"won":"lost"}
+        >
+          {userAnswers[number]&&(!userAnswers[number]?.correct?
+            "Wrong":
+            "Correct!"
+          )}
+        </h1>
+        <p>Score: {score}</p>
+      </section>}
       {loading&&<p>Loading Questions...</p>}
       {!loading&&!gameOver&&<QuestionCard 
         questionNum={number+1}
@@ -80,7 +96,12 @@ const App: React.FC = () => {
         callback={checkAnswer}
       />}
       {!gameOver && !loading && userAnswers.length === number+1 && number !== totalQuestions &&
-        <button onClick={nextQuestion}>Next</button>
+        <button 
+          onClick={nextQuestion}
+          id="next"
+        >
+          Next
+        </button>
       }
     </div>
   );

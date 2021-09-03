@@ -11,3 +11,7 @@ I wanted to pick up TypeScript and apply that knowledge to a real world app, esp
 
 ## Credit
 Much of the inspiration for the project came from [Thomas Weibenfalk's tutorial on freeCodeCamp](https://www.youtube.com/watch?v=F2JCjVSZlG0), yet my code deviates in certain ways from his
+
+https://motionarray.imgix.net/preview-359510-srG9iKVuEStuN07Q-large.jpg?w=1400&q=60&fit=max&auto=format
+
+https://www.bestcssbuttongenerator.com/#/0
