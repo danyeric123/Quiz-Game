@@ -1,3 +1,5 @@
+// The Question type has two snake case fields because the API returns it that way. Hence, I was simply conforming to the data I get back
+
 export type Question = {
   category: string;
   correct_answer: string;
