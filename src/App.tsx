@@ -62,7 +62,8 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <h1>React TypeScript Quiz</h1>
+      <h1>Trivia Game</h1>
+      <small>Written in React with TypeScript</small>
       {gameOver&&<button onClick={startTrivia}>Start</button>}
       {userAnswers[number]&&(!userAnswers[number]?.correct?
         "Wrong":

@@ -21,7 +21,7 @@ const QuestionCard : React.FC <Props> = ({question,answers,callback,questionNum,
             disabled={userAnswer?true:false}
             onClick={callback}
           >
-            {answer}
+            <span dangerouslySetInnerHTML={{__html:answer}} />
           </button>
       ))}
     </div>
