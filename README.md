@@ -15,3 +15,4 @@ I wanted to pick up TypeScript and apply that knowledge to a real world app, esp
 - Game background from [here](https://media.istockphoto.com/vectors/neon-quiz-sign-vector-design-template-quiz-neon-frame-light-banner-vector-id1248190953?k=20&m=1248190953&s=612x612&w=0&h=SFmTjXJ5wv9_lvUcU9lW12H7YElktS-xJA3uFlD8SiI=)
 - Wood background from [here](https://motionarray.imgix.net/preview-359510-srG9iKVuEStuN07Q-large.jpg?w=1400&q=60&fit=max&auto=format)
 - Buttons from [here](https://www.bestcssbuttongenerator.com/#/0)
+- Trvia questions taken from [Open Trivia Database](https://opentdb.com/)
